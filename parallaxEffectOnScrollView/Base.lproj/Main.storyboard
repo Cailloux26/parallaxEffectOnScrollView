@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsP-uc-bx7" userLabel="FirstView">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="331"/>
+                                        <rect key="frame" x="0.0" y="-352" width="600" height="683"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample1" translatesAutoresizingMaskIntoConstraints="NO" id="TkW-z8-jDF">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="683"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,11 +54,13 @@
                                     <constraint firstAttribute="bottom" secondItem="Jwi-tI-Twb" secondAttribute="bottom" id="XyP-aE-MYK"/>
                                     <constraint firstItem="Jwi-tI-Twb" firstAttribute="top" secondItem="HsP-uc-bx7" secondAttribute="bottom" constant="1" id="aBV-q5-NZ7"/>
                                     <constraint firstItem="Jwi-tI-Twb" firstAttribute="top" secondItem="TkW-z8-jDF" secondAttribute="bottom" id="q24-hk-WWd"/>
+                                    <constraint firstItem="HsP-uc-bx7" firstAttribute="top" relation="lessThanOrEqual" secondItem="W4m-kg-2x1" secondAttribute="top" id="wMV-sx-ZBn"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="9zm-D3-4bC"/>
                                         <exclude reference="SKd-62-OFx"/>
+                                        <exclude reference="wMV-sx-ZBn"/>
                                         <exclude reference="FGL-o4-WzG"/>
                                         <exclude reference="aBV-q5-NZ7"/>
                                     </mask>
@@ -74,7 +76,7 @@
                             <constraint firstAttribute="bottom" secondItem="W4m-kg-2x1" secondAttribute="bottom" id="4Sd-i5-GN5"/>
                             <constraint firstItem="HsP-uc-bx7" firstAttribute="width" secondItem="RcB-B3-pxe" secondAttribute="width" id="C76-L2-rsq"/>
                             <constraint firstItem="W4m-kg-2x1" firstAttribute="top" secondItem="XCw-cA-Z6G" secondAttribute="bottom" constant="-20" id="E4h-w7-0J1"/>
-                            <constraint firstItem="HsP-uc-bx7" firstAttribute="top" secondItem="XCw-cA-Z6G" secondAttribute="bottom" constant="-20" id="k2i-JF-CHc"/>
+                            <constraint firstItem="HsP-uc-bx7" firstAttribute="top" secondItem="XCw-cA-Z6G" secondAttribute="bottom" priority="750" constant="-20" id="k2i-JF-CHc"/>
                             <constraint firstItem="Jwi-tI-Twb" firstAttribute="width" secondItem="RcB-B3-pxe" secondAttribute="width" id="poF-F7-Cvi"/>
                             <constraint firstAttribute="trailing" secondItem="W4m-kg-2x1" secondAttribute="trailing" id="ruM-fM-dfF"/>
                         </constraints>
